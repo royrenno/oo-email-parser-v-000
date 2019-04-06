@@ -9,7 +9,7 @@ def initialize(emails)
   @@emails = emails
 end
 def parse
-  emaila.split.map do |email|
+  email.split.map do |email|
     email.split(",")
   end.flatten.unique
 end
