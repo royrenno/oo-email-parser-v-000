@@ -8,8 +8,9 @@ class EmailParser
 def initialize(emails)
   @emails = emails
 end
+
 def parse
-  email.split.map do |email|
+  emails.split.map do |email|
     email.split(",")
   end.flatten.unique
 end
